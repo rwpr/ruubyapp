@@ -1,10 +1,9 @@
 <% provide(:title, "Home") %>
-<% provide(:tutorialname, "Ruby on Rails Tutorial Sample App") %>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | <%= yield(:tutorialname) %> </title>
+    <title><%= full_title(yield(:title)) %></title>
   </head>
   <body>
     <h1>Sample App</h1>
